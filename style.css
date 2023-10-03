@@ -1,0 +1,352 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+@font-face {
+  font-family: dreams;
+  src: url(assets/fonts/BillionDreams_PERSONAL.ttf);
+}
+@font-face {
+  font-family: monsters;
+  src: url(assets/fonts/Melted\ Monster.ttf);
+}
+@font-face {
+  font-family: stranger;
+  src: url(assets/fonts/Stranger\ back\ in\ the\ Night.ttf);
+}
+@font-face {
+  font-family: satan;
+  src: url(assets/fonts/who\ asks\ satan.ttf);
+}
+@font-face {
+  font-family: zombie;
+  src: url(assets/fonts/Curse\ of\ the\ Zombie.ttf);
+}
+@font-face {
+  font-family: identidade;
+  src: url(assets/fonts/Identidad-ExtraBold.otf);
+}
+
+#img-fundo{
+  background-image: url(imgs/casa.jpg);
+  width: 100%;
+  height: 140vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar{
+  background: #282F42;
+  width: 100%;
+  height: 10vh;
+  /*entre display e align serve para ajustar a (nav) no centro
+  do site ou em qualquer parte */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+}
+#glob-gato{
+  width: 6.3%;
+  border-radius: 5px;
+  margin-left: 55px;
+}
+#name{
+  font-family: dreams;
+  margin-top: 10px;
+  margin-left: -10px;
+  font-size: 2.5em;
+  color: #bd641c;
+  text-shadow: 0 0px 23px rgb(143, 10, 10);
+}
+#name:hover{
+  color: #da7b2d;
+  text-shadow: 0px 0px 40px rgb(172, 10, 10);
+  transition: 0.2s ease;
+}
+#separacao{
+  background-color: rgb(216, 9, 9);
+  width: 3px;
+  height: 3.5em;
+  border-radius: 80px;
+  margin-left: 15px;
+  box-shadow: 0 10px 20px rgb(255, 0, 0);
+}
+#opcoes{
+  margin-left: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+}
+.lista-header{
+  font-family: stranger;
+  font-size: 70px;
+  color:#c0671e;
+  text-decoration: none;
+  text-shadow: 0px 2px 8px;
+}
+.lista-header:hover{
+  color: rgb(0, 173, 0);
+  transition: 0.2s ease;
+}
+.navbar-nav{
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  
+}
+.drop{
+  width: 130%;
+  background-color: #303b58;
+}
+.colapse{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 3em;
+  font-family: stranger;
+  color: rgb(153, 130, 0);
+}
+.colapse:hover{
+  background-color: #262e42;
+  color: rgb(168, 143, 0);
+  text-shadow: 0 0 10px rgb(209, 178, 0);
+}
+
+.section-text{
+  background-color: #93a4aad5;
+  position: absolute;
+  width: 60%;
+  height: 95%;
+  margin-top: 7%;
+  margin-left: 20%;
+  margin-right: 50%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.titulo{
+  display: flex;
+  align-items: center;
+  height: 5%;
+  font-family: zombie;
+  margin-top: 8px;
+  color: rgb(38, 112, 38);
+  text-shadow: 0px 0px 18px rgb(174, 0, 255);
+}
+.text-halloween{
+  display: flex;
+  align-items: center;
+  width: 98%;
+  height: 10%;
+  font-size: 18px;
+  font-family: identidade;
+  padding: 2px;
+  text-align: justify;
+  text-indent: 2em;
+}
+.text-halloween-2{
+  display: flex;
+  align-items: center;
+  width: 98%;
+  height: 10%;
+  font-size: 18px;
+  font-family: identidade;
+  margin-top: 1%;
+  padding: 2px;
+  text-align: justify;
+  text-indent: 2em;
+}
+.text-halloween-3{
+  display: flex;
+  align-items: center;
+  width: 98%;
+  height: 10%;
+  font-size: 18px;
+  font-family: identidade;
+  padding: 2px;
+  text-align: justify;
+  text-indent: 2em;
+}
+.sub-titulo{
+  width: 98%;
+  height: 4%;
+  display: flex;
+  align-items: center;
+  font-family: zombie;
+  color: rgb(38, 112, 38);
+  text-shadow: 0px 0px 18px rgb(174, 0, 255);
+  margin-top: 2%;
+}
+.sub-titulo-2{
+  width: 98%;
+  height: 4%;
+  margin-top: 1%;
+  display: flex;
+  align-items: center;
+  font-family: zombie;
+  color: rgb(38, 112, 38);
+  text-shadow: 0px 0px 18px rgb(174, 0, 255);
+}
+
+#monstros{
+  font-family: satan;
+  font-size: 40em;
+  border-radius: 13px;
+  margin-left: 1%;
+  margin-right: 2%;
+  width: 98%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: 60%;
+  position: absolute;
+  color: #be6e2d;
+  text-shadow: 0px 0px 25px #cc3333;
+}
+#monster:hover{
+  cursor: default;
+  color: #ec8836;
+  text-shadow: 0px 0px 40px #e63333;
+}
+.section-cards{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 85vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.card {
+  margin-top: 135%;
+  border-radius: 15px;
+  height: 400px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  border: black; 
+}
+.bio {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  color: white;
+  width: 100%;
+  height: 28%;
+  border-radius: 0 0 15px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+.img-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+}
+.img-card:hover {
+  transform: scale(1.3);
+  transition: 0.5s all ease-in-out;
+}
+.img-card:hover ~ .bio {
+  opacity: 1;
+  transition: 0.5s all ease-in-out;
+}
+
+.fundo-preto{
+  width: 100%;
+  height: 50vh;
+  background-color: #000000;
+  margin-top: 507px;
+}
+
+footer{
+  background-color: #000000;
+  width: 100%;
+  height: 18vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#gato-footer{
+  height: 93%; 
+}
+.text-footer{
+  font-family: monsters;
+  font-size: 20px;
+  height: 58%;
+  width: 10.5%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-wrap: wrap;
+  /*background-color: aliceblue;*/
+  margin-left: 30px;
+  color: #ad5c19;
+}
+.links-footer{
+  text-decoration: none;
+  color: #ad5c19;
+}
+.links-footer:hover{
+  color: #ca6a1b;
+  text-shadow: 0 0 10px #e67a22;;
+}
+.redes{
+  margin-top: 5px;
+  margin-left: 3px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#insta{
+  color: rgb(218, 85, 189);
+}
+#insta:hover{
+  color: rgb(175, 11, 140);
+}
+#tt{
+  color:#fff;
+}
+#tt:hover{
+  color:#505050;
+}
+#facebook{
+  color: rgb(34, 93, 255);
+}
+#facebook:hover{
+  color: rgb(2, 65, 238);
+}
+#separacao-footer{
+  background-color: rgb(216, 9, 9);
+  width: 3px;
+  height: 6em;
+  border-radius: 80px;
+  margin-left: 15px;
+  box-shadow: 0 10px 20px rgb(255, 0, 0);
+}
+#name-footer{
+  font-family: dreams;
+  font-size: 4em;
+  color: #bb6621;
+  text-shadow: 0 0px 25px rgb(143, 10, 10);
+}
+#name-footer:hover{
+  color: #cc752d;
+  text-shadow: 0px 0px 40px rgb(196, 21, 21);
+  transition: 0.2s ease;
+}
